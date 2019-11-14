@@ -491,8 +491,8 @@ model.1 <- OneR(DEFAULT ~ SEX + EDUCATION + MARRIAGE +
 #only 78% accuracy - Max_DLQ is id as significant
 summary(model.1)
 
-# ------------- Random Forest
-# most important variable using random forests for class variables
+# ------------- RPART TREE
+# ID most important variables using TREE 
 
 library('tree')
 tree_train_df =tree(DEFAULT~.,train_df)
@@ -505,3 +505,8 @@ tree_train_df
 
 table(train_df$DEFAULT)
 
+# ------------- RANDOM FOREST
+       
+# ------------- PRELIM LOG REG
+       
+# ------------- MODELS
